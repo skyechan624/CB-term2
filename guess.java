@@ -70,17 +70,6 @@ public class guess
         
     }
 
-
-    /*public JPanel getLeftPanel()
-    {
-        return leftPanel;
-    }
-
-    public JPanel getRightPanel()
-    {
-        return rightPanel;
-    }*/
-
     public JPanel getPanel()
     {
         return panel;
@@ -90,10 +79,4 @@ public class guess
     {
         return emptyLabel;
     }
-
-    /*public JLabel[] getEmptyLabel_2()
-    {
-        return emptyLabel_2;
-    }*/
-    
 }

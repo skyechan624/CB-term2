@@ -24,11 +24,12 @@ public class mainGame implements ActionListener
     private JButton blueButton = new JButton(blue);
     private JButton indigoButton = new JButton(indigo);
     private JButton violetButton = new JButton(violet);
-    private guess myGuess = new guess();
     private ColourCode myColourCode = new ColourCode();
+    private guess myGuess = new guess();
+    private guess row[] = new guess[6]; 
     private int j=5;
     private int i=0;
-    guess row[] = new guess[6];
+    
     
     public mainGame()
     {   
@@ -71,6 +72,7 @@ public class mainGame implements ActionListener
         colourBreaker.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
         colourBreaker.setVisible(true);
 
+        //print out model answer
         myColourCode.randomNum();
     }
 
@@ -135,11 +137,7 @@ public class mainGame implements ActionListener
             i=0;
             j--;
 
-            //exit when all inputs are correct
-            /*if (black=4)
-            {
-                colourBreaker.setDefaultCloseOperation(System.exit);
-            }*/
+            myColourCode.exit();
         }
     }
 }
